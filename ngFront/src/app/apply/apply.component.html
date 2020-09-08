@@ -1,0 +1,675 @@
+
+
+  
+  <mat-horizontal-stepper class="mob" style="box-shadow: 0.1px 1px 8px rgb(121, 119, 119);" [linear]="true" #stepper >
+    
+    <mat-step  [stepControl]="firstFormGroup" >
+      <form [formGroup]="firstFormGroup" (submit)="Personal()"  class="animated">
+        <ng-template matStepLabel>Personal Information</ng-template>
+        
+        <h5 style="text-align:center; color: #888; font-weight:200" > Personal Information</h5>
+        
+       
+        <div class="row" style=" height: auto">
+            <div class="col-sm">
+                <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="First Name" formControlName="First_name" name="First_name">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="Middle name" formControlName="Second_name"   name="Second_name">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Family name" formControlName="Family_name"  name="Family_name">
+                      </mat-form-field></td>
+                      <td><mat-form-field>
+                          <input matInput placeholder="Age" formControlName="Age"  name="Age">
+                          </mat-form-field></td>
+                          <td><mat-form-field>
+                          <input matInput placeholder="Prefered University" formControlName="university"  name="university">
+                          </mat-form-field></td>
+        
+                  </tr></table>
+            </div>
+            <!-- <div class="col-sm" >
+                <mat-radio-group style="padding-top: 100px;" formControlName="Gender">
+                    <mat-radio-button style="padding-top: 15px;" value="Male">Male</mat-radio-button>
+                    <mat-radio-button value="Female">Female</mat-radio-button>
+                  </mat-radio-group>
+                  
+            </div> -->
+            
+            <div class="col-sm">
+                <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="Passport number" formControlName="Pasport_number"  name="Pasport_number">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="Valid untill" formControlName="Valid_until"  name="Valid_until">
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Country of issue" formControlName="Country_issue"  name="Country_issue">
+                      </mat-form-field></td>
+                      <td><mat-form-field>
+                          <input matInput placeholder="Region" formControlName="Region"  name="Region">
+                          </mat-form-field></td>
+                          <td><label>Degree:</label><select placeholder="Degree type" style="border-bottom: 1px solid rgb(164, 163, 163); font-size:10px; width:100%; " formControlName="Degree_type" >
+                              <option *ngFor="let field of fields" [value]="field.value" >
+                                {{field.viewValue}}
+                              </option>
+                            </select></td>
+        
+                  </tr></table>
+            </div>
+            <!-- <div class="col-sm" >
+               
+                    <mat-select placeholder="Degree type" style="border-bottom: 1px solid rgb(164, 163, 163); " formControlName="Degree_type" >
+                        <mat-option *ngFor="let field of fields" [value]="field.value" >
+                          {{field.viewValue}}
+                        </mat-option>
+                      </mat-select>
+                
+            </div> -->
+        </div>
+        <div class="row" style=" height: auto">
+            <div class="col-sm">
+                <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field>
+                <input matInput placeholder="Place of birth" formControlName="Place_of_Birth"  name="Place_of_Birth" >
+              </mat-form-field></td>
+            
+              <td><mat-form-field>
+                <input matInput placeholder="Whatsapp Number" formControlName="whats_app"  name="whats_app">
+              </mat-form-field></td>
+            
+              <td><mat-form-field>
+                <input matInput placeholder="Mobile" formControlName="mobile"  name="mobile">
+              </mat-form-field></td>
+              <td><mat-form-field>
+                  <input matInput placeholder="Distric" formControlName="Distric"  name="Distric">
+                  </mat-form-field></td>
+                  <td><mat-form-field>
+                  <input matInput placeholder="Agent" formControlName="Agent"  name="Agent">
+                  </mat-form-field></td>
+              </tr>
+              </table>
+            </div>
+            <form #imageForm= ngForm (ngSubmit)="onUpload(picture)">
+            <div class="col-sm" >
+                <!-- <table class="example-full-width" cellspacing="0">
+                  <tr>
+
+                    <td><mat-form-field>
+                    <input matInput placeholder="Mobile" formControlName="mobile"  name="mobile">
+                    </mat-form-field></td>
+                    <td><mat-form-field>
+                    <input matInput placeholder="Mobile" formControlName="mobile"  name="mobile">
+                    </mat-form-field></td>
+                  </tr>
+                </table> -->
+            
+        </div>
+        </form>
+
+            
+
+
+
+            </div>
+            <div class="row" style=" height: auto">
+                <div class="col-sm">
+                    <table class="example-full-width" cellspacing="0"><tr>
+                  <td><mat-form-field>
+                    <input matInput placeholder="Date of birth" formControlName="Date_of_birth" type="date"  name="Date_of_birth">
+                  </mat-form-field></td>
+                
+                  <td><mat-form-field>
+                    <input matInput placeholder="Religion" formControlName="Religion"  name="Religion">
+                  </mat-form-field></td>
+               
+                  <td><mat-form-field>
+                    <input matInput placeholder="Marital status" formControlName="Marital_status"  name="Marital_status">
+                  </mat-form-field></td>
+                  <td><mat-radio-group style="padding-top: 100px;" formControlName="Gender">
+                      <mat-radio-button style="padding-top: 15px;" value="Male">Male</mat-radio-button>
+                      <mat-radio-button value="Female">Female</mat-radio-button>
+                    </mat-radio-group></td>
+                  </tr>
+                  </table>
+                </div>
+            
+        </div>
+        <div class="row" style="height: auto">
+            <div class="col-sm">
+                <table class="example-full-width" cellspacing="0"><tr>
+              <td><mat-form-field>
+                <input matInput placeholder="Highest degree" formControlName="Highest_degree"  name="Highest_degree">
+              </mat-form-field></td>
+          
+              <td>
+                  <mat-form-field>
+                    <input matInput placeholder="Occupation/status " formControlName="occupation"  name="occupation">
+                  </mat-form-field>
+                </td>
+          
+            
+                <td>
+                    <mat-form-field>
+                      <input matInput placeholder="Field " formControlName="Field"  name="Field">
+                    </mat-form-field>
+                  </td>
+                  </tr>
+                  </table>
+                  
+            </div>
+            <div>
+          
+                <button mat-button matStepperNext type="submit">Next1</button>
+              </div>
+    </div>
+        
+      </form>
+    </mat-step>
+  
+
+
+
+
+
+
+    
+
+
+
+
+    <mat-step [stepControl]="secondFormGroup" [optional]="isOptional">
+      <form [formGroup]="secondFormGroup" (submit)="Education()">
+        <ng-template matStepLabel>Education History</ng-template>
+        <h5 style="text-align:center; color: #888; font-weight:200" > Education Background</h5>
+        <table class="table table-sm table-bordered table-striped " style=" background:rgba(117, 117, 117, 117); box-shadow:0 5px 5px 0 #888;; border-top-left-radius:10px; border-top-right-radius:10px; overflow:hidden; ">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name of School</th>
+                <th scope="col">From/To</th>
+                <th scope="col">Field of Study</th>
+              
+              </tr>
+            </thead>
+            <tbody>
+              <tr id="customers">
+                <td scope="row">1</td>
+                <td><mat-form-field class="example-full-width">
+                    <input matInput placeholder="High school/Diploma" formControlName="Name_of_High_school_or_diploma" >
+                  </mat-form-field></td>
+                  <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="eg 2004 - 2009" formControlName="From_to_adv" >
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Advanced level" formControlName="Field_of_study_adv" >
+                      </mat-form-field></td>
+              </tr>
+              <tr id="customers">
+                  <td scope="row">1</td>
+                  <td><mat-form-field class="example-full-width">
+                      <input matInput placeholder="Secondary/O'level" formControlName="Name_of_school_secondary_level" >
+                    </mat-form-field></td>
+                    <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="eg 2004 - 2009" formControlName="from_to_sec" >
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="Ordinary level"  formControlName="Field_of_study_sec">
+                        </mat-form-field></td>
+                </tr>
+                <tr id="customers">
+                    <td scope="row">1</td>
+                    <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Bachelor" formControlName="Bachelor" >
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="eg 2004 - 2009" formControlName="From_to_bach" >
+                        </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                            <input matInput placeholder="Bachelor Degree" formControlName="Field_of_study_bach" >
+                          </mat-form-field></td>
+                  </tr>
+                  <tr id="customers">
+                      <td scope="row">1</td>
+                      <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="Masters"  formControlName="Masters">
+                        </mat-form-field></td>
+                        <td><mat-form-field class="example-full-width">
+                            <input matInput placeholder="eg 2017 - 2018" formControlName="From_to_master" >
+                          </mat-form-field></td>
+                          <td><mat-form-field class="example-full-width">
+                              <input matInput placeholder="eg Master Degree"  formControlName="Field_of_study_master">
+                            </mat-form-field></td>
+                    </tr>
+              <!--<tr id="customers">-->
+                <!--<td scope="row">2</td>-->
+                <!--<td>BA</td>-->
+                <!--<td>3</td>-->
+                <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+              <!--</tr>-->
+              <!--<tr id="customers">-->
+                <!--<td scope="row">3</td>-->
+                <!--<td>Accountancy</td>-->
+                <!--<td>3</td>-->
+                <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+              <!--</tr>-->
+            </tbody>
+          </table>
+
+<h5 style="text-align:center; color: #888; font-weight:200" > Source of funding</h5>
+
+        
+          <mat-radio-group style="padding-top: 100px;" formControlName="Source_of_Funding">
+            <mat-radio-button style="padding-top: 15px;" value="Self support">Self support</mat-radio-button>
+            <mat-radio-button value="Scholarship">Scholarship</mat-radio-button>
+            <mat-radio-button value="University exchange">University exchange</mat-radio-button>
+          </mat-radio-group>
+       
+        <div>
+          <button mat-button matStepperPrevious>Back</button>
+          <button mat-button matStepperNext type="submit">Next</button>
+        </div>
+      </form>
+    </mat-step>
+
+    <mat-step [stepControl]="firstSecFormGroup">
+        <form [formGroup]="firstSecFormGroup" (submit)="Working()">
+            <ng-template matStepLabel> Working Experience</ng-template>
+            <h5 style="text-align:center; color: #888; font-weight:200" > Working Experience</h5>
+            <table class="table table-sm table-bordered table-striped " style=" background:rgba(117, 117, 117, 117); box-shadow:0 5px 5px 0 #888;; border-top-left-radius:10px; border-top-right-radius:10px; overflow:hidden; ">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">Employer</th>
+                    <th scope="col">From/To</th>
+                    <th scope="col">Responsibility</th>
+                    <th scope="col">Position/Title</th>
+                  
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr id="customers">
+                    
+                    <td>
+                      <mat-form-field class="example-full-width">
+                        <input matInput  formControlName="employer" name="employer">
+                      </mat-form-field>
+                    </td>
+                      <td>
+                        <mat-form-field class="example-full-width">
+                          <input matInput formControlName="Year_range" name="Year_range">
+                        </mat-form-field>
+                      </td>
+                        <td>
+                          <mat-form-field class="example-full-width">
+                            <input matInput formControlName="Responsibility"  name="Responsibility">
+                          </mat-form-field>
+                        </td>
+                          <td >
+                            <mat-form-field class="example-full-width">
+                              <input matInput formControlName="Position" name="Position" >
+                            </mat-form-field>
+                          </td>
+                  </tr>
+                  <tr id="customers">
+                      
+                      <td>
+                        <mat-form-field class="example-full-width">
+                          <input matInput formControlName="employer2" name="employer2" >
+                        </mat-form-field>
+                      </td>
+                        <td>
+                          <mat-form-field class="example-full-width">
+                            <input matInput formControlName="Year_range2" name="Year_range2" >
+                          </mat-form-field>
+                        </td>
+                          <td>
+                            <mat-form-field class="example-full-width">
+                              <input matInput formControlName="Responsibility2" name="Responsibility2" >
+                            </mat-form-field>
+                          </td>
+                            <td>
+                                <mat-form-field class="example-full-width">
+                                    <input matInput  formControlName="Position2" name="Position2">
+                                </mat-form-field>
+                            </td>
+                    </tr>
+                    <tr id="customers">
+                        
+                        <td>
+                          <mat-form-field class="example-full-width">
+                            <input matInput formControlName="employer3" name="employer3">
+                          </mat-form-field>
+                        </td>
+                          <td>
+                            <mat-form-field class="example-full-width">
+                              <input matInput formControlName="Year_range3" name="Year_range3">
+                            </mat-form-field>
+                          </td>
+                            <td>
+                              <mat-form-field class="example-full-width">
+                                <input matInput formControlName="Responsibility3"  name="Responsibility3">
+                              </mat-form-field>
+                            </td>
+                              <td>
+                                  <mat-form-field class="example-full-width">
+                                      <input matInput formControlName="Position3"  name="Position3">
+                                  </mat-form-field>
+                              </td>
+                      </tr>
+                      <tr id="customers">
+                          
+                          <td>
+                            <mat-form-field class="example-full-width">
+                              <input matInput formControlName="employer4" name="employer4">
+                            </mat-form-field>
+                          </td>
+                            <td>
+                              <mat-form-field class="example-full-width">
+                                <input matInput formControlName="Position2"  name="Position2">
+                              </mat-form-field>
+                            </td>
+                              <td>
+                                <mat-form-field class="example-full-width">
+                                  <input matInput formControlName="Responsibility4" name="Responsibility4">
+                                </mat-form-field>
+                              </td>
+                                <td >
+                                  <mat-form-field class="example-full-width">
+                                    <input matInput formControlName="Position4" name="Position4">
+                                  </mat-form-field>
+                                </td>
+                        </tr>
+                  <!--<tr id="customers">-->
+                    <!--<td scope="row">2</td>-->
+                    <!--<td>BA</td>-->
+                    <!--<td>3</td>-->
+                    <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+                  <!--</tr>-->
+                  <!--<tr id="customers">-->
+                    <!--<td scope="row">3</td>-->
+                    <!--<td>Accountancy</td>-->
+                    <!--<td>3</td>-->
+                    <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+                  <!--</tr>-->
+                </tbody>
+              </table>
+    
+    
+            <div>
+              <button mat-button matStepperPrevious>Back</button>
+              <button mat-button matStepperNext type="submit">Next</button>
+            </div>
+          </form>
+      </mat-step>
+      
+
+
+      <mat-step [stepControl]="thirdFormGroup" >
+        <form [formGroup]="thirdFormGroup" (submit)="contact()">
+          <ng-template matStepLabel>Contact Information</ng-template>
+          
+          <h5 style="text-align:center; color: #888; font-weight:200" > Contact Information</h5>
+          
+         
+          <div class="row" style=" height: auto">
+              <div class="col-sm">
+                  <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Full Name pers1" formControlName="Full_name1" name="Full_name1">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="Full Name persn2" formControlName="Full_name2" name="Full_name2">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="Full Name persn3" formControlName="Full_name3" name="Full_name3">
+                        </mat-form-field>
+          
+                    </tr></table>
+              </div>
+              
+              
+              <div class="col-sm">
+                  <table class="example-full-width" cellspacing="0"><tr>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="mobile persn1" formControlName="mobile_person1" name="mobile_person1">
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                        <input matInput placeholder="mobile persn2" formControlName="mobile_person2" name="mobile_person2" >
+                      </mat-form-field></td>
+                      <td><mat-form-field class="example-full-width">
+                          <input matInput placeholder="mobile persn3" formControlName="mobile_person3" name="mobile_person3">
+                        </mat-form-field></td>
+          
+                    </tr></table>
+              </div>
+              
+          </div>
+          <div class="row" style=" height: auto">
+              <div class="col-sm">
+                  <table class="example-full-width" cellspacing="0"><tr>
+                <td><mat-form-field>
+                  <input matInput placeholder="whatsapp persn1" formControlName="whatsap_person1" name="whatsap_person1">
+                </mat-form-field></td>
+              
+                <td><mat-form-field>
+                  <input matInput placeholder="whatsapp persn2" formControlName="whatsap_person2" name="whatsap_person2">
+                </mat-form-field></td>
+              
+                <td><mat-form-field>
+                  <input matInput placeholder="whatsapp persn3" formControlName="whatsap_person3" name="whatsap_person3">
+                </mat-form-field></td>
+                </tr>
+                </table>
+              </div>
+              </div>
+              <div class="row" style=" height: auto">
+                  <div class="col-sm">
+                      <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field>
+                      <input matInput placeholder="Email persn1" formControlName="Email_person1" type="email" name="Email_person1">
+                    </mat-form-field></td>
+                  
+                    <td><mat-form-field>
+                      <input matInput placeholder="Email persn2" formControlName="Email_person2" name="Email_person2">
+                    </mat-form-field></td>
+                 
+                    <td><mat-form-field>
+                      <input matInput placeholder="Email persn3" formControlName="Email_person3" name="Email_person3">
+                    </mat-form-field></td>
+                    </tr>
+                    </table>
+                  </div>
+              
+          </div>
+          <div class="row" style=" height: auto">
+              <div class="col-sm">
+                  <table class="example-full-width" cellspacing="0"><tr>
+                <td><mat-form-field>
+                  <input matInput placeholder="Street persn 1" formControlName="Street_person1" name="Street_person1">
+                </mat-form-field></td>
+            
+                <td>
+                    <mat-form-field>
+                      <input matInput placeholder="Street persn 2 " formControlName="Street_person2" name="Street_person2">
+                    </mat-form-field>
+                  </td>
+            
+              
+                  <td>
+                      <mat-form-field>
+                        <input matInput placeholder="Street persn 3" formControlName="Street_person3" name="Street_person3">
+                      </mat-form-field>
+                    </td>
+                    </tr>
+                    </table>
+                    
+              </div> 
+              </div>
+
+              <div class="row" style=" height: auto">
+                  <div class="col-sm">
+                      <table class="example-full-width" cellspacing="0"><tr>
+                    <td><mat-form-field>
+                      <input matInput placeholder="District  & Province persn1" formControlName="Districprovince1" type="text" name="Districprovince1">
+                    </mat-form-field></td>
+                  
+                    <td><mat-form-field>
+                      <input matInput placeholder="District  & Province persn2" formControlName="Districprovince2" name="Districprovince2">
+                    </mat-form-field></td>
+                 
+                    <td><mat-form-field>
+                      <input matInput placeholder="District & Province persn3" formControlName="Districprovince3" name="Districprovince3">
+                    </mat-form-field></td>
+                    </tr>
+                    </table>
+                  </div>
+              
+          </div>
+
+          <div class="row" style=" height: auto">
+              <div class="col-sm">
+                  <table class="example-full-width" cellspacing="0"><tr>
+                <td><mat-form-field>
+                    <mat-select placeholder="country person1" formControlName="Country_person1" name="Country_person1">
+                      <mat-option *ngFor="let country of countries" [value]="country.name" name="Full_name2">
+                        {{ country.name }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field></td>
+              
+                <td><mat-form-field>
+                    <mat-select placeholder="country persn2" formControlName="Country_person2" name="Country_person2">
+                      <mat-option *ngFor="let country of countries" [value]="country.name" >
+                        {{ country.name }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field></td>
+             
+                <td><mat-form-field>
+                    <mat-select placeholder="country persn3" formControlName="Country_person3" name="Country_person3">
+                      <mat-option *ngFor="let country of countries" [value]="country.name"> 
+                        {{ country.name }}
+                      </mat-option>
+                    </mat-select>
+                  </mat-form-field></td>
+                </tr>
+                </table>
+              </div>
+          
+      </div>
+
+
+      <div class="row" style=" height: auto">
+          <div class="col-sm">
+              <table class="example-full-width" cellspacing="0"><tr>
+            <td><mat-form-field>
+              <input matInput placeholder="zip no" formControlName="zip_no1" type="email" name="zip_no1">
+            </mat-form-field></td>
+          
+            <td><mat-form-field>
+              <input matInput placeholder="zip no" formControlName="zip_no2" name="zip_no2">
+            </mat-form-field></td>
+         
+            <td><mat-form-field>
+              <input matInput placeholder="zip no" formControlName="zip_no3" name="zip_no3">
+            </mat-form-field></td>
+            </tr>
+            </table>
+          </div>
+      
+  </div>
+              
+      
+      <div>
+            
+          <button mat-button matStepperNext type="submit">Next</button>
+        </div>
+          
+        </form>
+      </mat-step>
+
+
+      <mat-step>
+          <ng-template matStepLabel>Upload document</ng-template>
+          <form #imageForm= ngForm (ngSubmit)="onUploadfiles(pasport, olevelcertificate, alevelcertificate , bachelortranscript, bachelorcertificate , medicalexamination, clinicalrecord, photo)">
+          <div class="container">
+              <div class="row">
+                <div class="col-sm">
+                  <input name="whoa5" #pasport style="font-size:14px; display: none" #fileInput1  (change)="onfileSelected($event.target.files)" type="file" required>
+                        <a (click)="fileInput1.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); text-align:center; color:rgb(48, 48, 48); font-size:12px;">Select pasport</a>
+                        <button class="pull-right"  mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                </div>
+                <div class="col-sm">
+                    <input name="whoa6" #alevelcertificate style="font-size:10px; display: none" #fileInput2   (change)="onalevelcertificate($event.target.files)" type="file">
+                      <a (click)="fileInput2.click()"  style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select a'level certificate</a>
+                      <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                </div>
+                <div class="col-sm">
+                 <input #olevelcertificate style="font-size:10px; display: none" #fileInputr   (change)="onfile($event.target.files)" type="file">
+                                <a (click)="fileInputr.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select o'level certificate..</a>
+                                <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                </div>
+              </div>
+              <div style="padding:5px;"></div>
+
+
+              <div class="row">
+                  <div class="col-sm">
+                          <input name="whoa7" #bachelortranscript style="font-size:10px; display: none" #fileInput3   (change)="onbachelortranscript($event.target.files)" type="file">
+                          <a (click)="fileInput3.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); text-align:center; color:rgb(48, 48, 48); font-size:12px;">Select bachelor transcript</a>
+                          <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                  </div>
+                  <div class="col-sm">
+                <input name="whoa0" #bachelorcertificate style="font-size:10px; display: none" #fileInput4   (change)="onbachelorcert($event.target.files)" type="file">
+                        <a (click)="fileInput4.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select bachelor certificate</a>
+                        <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                  </div>
+                  <div class="col-sm">
+                    <input name="whoa9" #medicalexamination style="font-size:10px; display: none" #fileInput5   (change)="onmedicalexam($event.target.files)" type="file">
+                                  <a (click)="fileInput5.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select medical examination</a>
+                                  <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                  </div>
+                </div>
+                <div style="padding:5px;"></div>
+                <div class="row">
+                    <div class="col-sm">
+                  <input name="whoa1" #clinicalrecord style="font-size:10px; display: none" #fileInput6   (change)="onclinicalrec($event.target.files)" type="file">
+                            <a (click)="fileInput6.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); text-align:center; color:rgb(48, 48, 48); font-size:12px;">clinical record</a>
+                            <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                    </div>
+                    <div class="col-sm">
+                       <input name="whoa2" #photo style="font-size:10px; display: none" #fileInput7   (change)="onphoto($event.target.files)" type="file">
+                          <a (click)="fileInput7.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select photo</a>
+                          <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                    </div>
+                    <div class="col-sm">
+                     <input name="whoa3" style="font-size:10px; display: none" #fileInput8   (change)="onfolevelcert($event.target.files)" type="file">
+                                    <a (click)="fileInput8.click()" style="cursor: pointer; background :rgba(232, 230, 230, 0); color:rgb(48, 48, 48); font-size:12px;">Select o'level certificate</a>
+                                    <button class="pull-right" mat-raised-button (click)="onUploadfiles()" style="font-size:10px;">Upload</button>
+                    </div>
+                  </div>  
+            </div>
+          <div>
+              
+              <button mat-button matStepperNext type="submit">Next</button>
+            </div>
+            </form>
+        </mat-step>
+
+
+      <mat-step>
+          <ng-template matStepLabel>Done</ng-template>
+          You are now done.
+          <div>
+            <button mat-button matStepperPrevious>Back</button>
+            <button  mat-button (click)="stepper.reset()">Reset</button>
+          </div>
+        </mat-step>
+     
+  </mat-horizontal-stepper>
+

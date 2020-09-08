@@ -1,0 +1,64 @@
+
+
+<mat-card class="mob" style="min-height:380px;">
+  <div style=" padding-top:15px; border-top-left-radius:10px;  border-top-right-radius:10px;">
+    <h4 style="text-align: center; letter-spacing:8px; color:#666; font-weight:100;">MY STUDENTS</h4>
+    <div style="height:400px; overflow:auto">
+    <table class="table table-sm table-bordered table-striped table-light" style=" overflow:hidden; " >
+      <thead>
+        <tr>
+          <!-- <th scope="col">#</th> -->
+          <th scope="col">Date</th>
+          <th scope="col">Name</th>
+          <th scope="col">Level</th>
+          <th scope="col">Age</th>
+          <th scope="col">University</th>
+          <th scope="col">Mobile</th>
+          <th scope="col">Gender</th>
+          <th scope="col">Religion</th>
+          <th scope="col">Street</th>
+          <th scope="col">Distric</th>
+          <th scope="col">Region</th>
+          <th scope="col">Country</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="cursor:pointer" id="customers" *ngFor="let m of all"  (click)="onselected(form)">
+          <!-- <td *ngIf="m.Partner === Partner" scope="row">1</td> -->
+          <td *ngIf="m.Partner === Partner" >{{m.Date | date}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.First_name}} {{m.Second_name}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Highest_degree}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Age}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.university}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.mobile}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Gender}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Religion}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Place_of_Birth}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Distric}}</td>
+          <td *ngIf="m.Partner === Partner" >{{m.Region}}</td>
+        
+          <td *ngIf="m.Partner === Partner" >{{m.Country_issue}}</td>
+        </tr>
+        <!--<tr id="customers">-->
+          <!--<td scope="row">2</td>-->
+          <!--<td>BA</td>-->
+          <!--<td>3</td>-->
+          <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+        <!--</tr>-->
+        <!--<tr id="customers">-->
+          <!--<td scope="row">3</td>-->
+          <!--<td>Accountancy</td>-->
+          <!--<td>3</td>-->
+          <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+        <!--</tr>-->
+      </tbody>
+    </table>
+    
+  </div>
+    </div>
+  
+  
+</mat-card>
+
+
+

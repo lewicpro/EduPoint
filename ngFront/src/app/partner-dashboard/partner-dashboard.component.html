@@ -1,0 +1,75 @@
+
+<div style="padding:50px;"></div>
+<div class=" container"  style="padding-bottom: 100px; overflow: hidden; background-color:rgba(57, 57, 57, 0.2); border-color:rgba(57, 57, 57, 0); height:400px">
+
+
+        <div class="row">
+
+            <div class="col-2" style="height:450px;">
+                <mat-nav-list class="moj" style="background-color: #ed1c24; padding-top: 15px;">
+
+                    <mat-list-item>
+                     <a matLine [routerLink]="['Partnera']">Dashboard</a>
+                     <button mat-icon-button [routerLink]="['Partnera']"  style="background-color: #ed1c24;">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                  <mat-list-item>
+                        <a matLine [routerLink]="['Partner-lists']">Students</a>
+                     <button mat-icon-button [routerLink]="['Partner-lists']"  style="background-color: #ed1c24;">
+
+                        <i title="Apply" class="fa fa-plus" aria-hidden="true"></i>
+                     </button>
+
+                  </mat-list-item>
+                
+                    <mat-list-item>
+                     <a matLine (click)="selected()" [routerLink]="['Partner-apply']">Register</a>
+                     <button (click)="selected()" mat-icon-button [routerLink]="['Partner-apply']"  style="background-color: #ed1c24;">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine (click)="selected()" [routerLink]="['Partner-scholarship']">Scholarship</a>
+                     <button (click)="selected()" mat-icon-button [routerLink]="['Partner-scholarship']" style="background-color: #ed1c24;" >
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine (click)="selected()" [routerLink]="['Partner-services']">Services</a>
+                     <button (click)="selected()" mat-icon-button [routerLink]="['Partner-services']" style="background-color: #ed1c24;" >
+                        <i class="fa fa-spinner "></i>
+                     </button>
+                  </mat-list-item>
+
+
+                    <mat-list-item>
+                     <a matLine [routerLink]="['Partner-Email']">Email</a>
+                     <button mat-icon-button [routerLink]="['Partner-Email']" style="background-color: #ed1c24;" >
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine (click)="logout()">Logout</a>
+                     <button mat-icon-button (click)="logout()" style="background-color: #ed1c24;">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+
+                </mat-nav-list>
+
+
+            </div>
+
+            <div class="col-10" style="overflow: auto; height:400px">
+                <router-outlet></router-outlet>
+
+
+
+
+            </div>
+
+        </div>
+</div>
+<div style="padding:50px;"></div>
+

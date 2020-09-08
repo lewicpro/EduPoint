@@ -1,0 +1,83 @@
+
+
+<nav class=" navbar navbar-expand-md fixed-top" style="background: linear-gradient(to top right, ghostwhite, ghostwhite); height:60px; box-shadow:1px 3px 6px 1px rgba(100, 93, 93, 0.5);">
+      <div class="container">
+      <style>
+      a:hover {
+          color: green;
+
+      }
+
+      .active{
+        background:rgb(55, 165, 62);
+        border-radius: 20px;
+        color: whitesmoke;
+      }
+      
+      a{
+        color: rgb(42, 39, 39);
+        font-weight:100;
+        
+      }
+
+      a.a:hover {
+          background-color: rgba(198, 198, 198, 0.3);
+          }
+      .a{
+        color: rgb(0, 0, 0);
+        font-weight:100;
+        font-size: 13px;
+        
+        
+      }
+      .dropdown-item{
+        background-color: rgba(255, 255, 255, 0.2);
+
+      }
+      </style>
+        <a class="navbar-brand" href="#"><img class="thumbnail" src="../assets/images/cea.png" width="128px" height="70px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#" [routerLink]="['/']">Home <span class="sr-only">(current)</span></a>
+            </li>
+           
+
+
+            <li class="nav-item ">
+            <a class="nav-link " [routerLink]="['/Programs/majors']" [routerLinkActive]="['active']"  id="dropdown01">Programs</a>
+            <!-- <div class="dropdown-menu" style="background:linear-gradient(to top right, rgba(255, 255, 255, 0.8), rgba(50, 50, 50, 0.8 )); border-color:rgba(255, 255, 255, 0); " *dropdownMenu aria-labelledby="dropdown01">
+              <a class="a dropdown-item"  [routerLink]="['/Programs/majors']">Bachelors</a>
+              <a class="a dropdown-item" >Masters</a>
+              <a class="a dropdown-item" href="#">PhD</a>
+              <a class="a dropdown-item" href="#">Chinese language</a>
+            </div> -->
+          </li>
+
+            <li class="nav-item">
+              <a class="nav-link "  [routerLink]="['/Other-Services/visa']" [routerLinkActive]="['active']" >Other Services</a>
+            </li>
+            <li class="nav-item" style="font-weight:100">
+              <a  class="nav-link" [routerLink]="['/About/Us']" [routerLinkActive]="['active']" >About Us</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link"  [routerLink]="['/Other-Services/Downloads']" [routerLinkActive]="['active']" >Downloads</a>
+            </li>
+          </ul>
+
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </form>
+         <ul>
+           
+          <li class="nav-item" style="list-style-type: none;">
+              <a style="cursor:pointer" (click)="check()">{{button}}</a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </nav>
+

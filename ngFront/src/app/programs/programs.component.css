@@ -1,0 +1,27 @@
+.list-group-item.active{
+    background-color:rgba(57, 57, 57, 0.2);
+    border-color:rgba(57, 57, 57, 0);
+    color:green;
+        
+    /* filter:blur(10px);
+    -webkit-filter: blur(1px);
+    z-index: 2; */
+
+
+}
+.list-group-item.active:hover{
+    color:red;
+
+}
+
+.list-group-item{
+
+    padding: .55rem 1.25rem;
+    background-color: rgba(2, 28, 31, 0.7);
+    color: white;
+
+}
+.list-group-item:hover{
+    color:black;
+
+}

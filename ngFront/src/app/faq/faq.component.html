@@ -1,0 +1,20 @@
+<div style="padding:10px;"></div>
+
+<mat-accordion>
+  <mat-expansion-panel *ngFor="let list of posts">
+    <mat-expansion-panel-header >
+      <mat-panel-title  >
+        {{list.question}}
+      </mat-panel-title>
+      <mat-panel-description >
+
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+   {{list.answer}}
+
+  </mat-expansion-panel>
+
+
+
+</mat-accordion>

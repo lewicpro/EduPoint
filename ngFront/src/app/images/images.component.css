@@ -1,0 +1,51 @@
+
+
+.allimages{
+    width:300px;
+    height:200px;
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+}
+
+.allimages img{
+    
+    width:100%;
+    height:100%;
+    border-radius: 4px;
+    transition: 3s;
+
+
+}
+.allimages:hover img{
+    filter:blur(2px);
+    
+    
+
+}
+
+.allimages :not(img){
+    position: absolute;
+    top:30%;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+.allimages h6{
+    top: 80%;
+    font-weight: 100;
+    
+}
+
+
+.mat-table{
+    background: ghostwhite
+    /* color: */
+
+}
+.mat-cell{
+    
+    font-weight : 200;
+}
+

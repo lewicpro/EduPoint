@@ -1,0 +1,29 @@
+mat-panel-title{
+    color: rgba(38, 38, 38, 0.8);
+    padding: 1px;
+
+}
+
+mat-expansion-panel-header{
+    background: linear-gradient(to right, rgba(234, 234, 234, 0.8), rgba(255, 255, 255, 0.8));
+
+}
+
+mat-expansion-panel-header:hover{
+    color: white;
+    background: linear-gradient(to right, rgba(234, 234, 234, 0.8), rgba(255, 255, 255, 0.8));
+
+}
+
+mat-expansion-panel:hover{
+    color:black;
+    background: linear-gradient(to right, rgba(93, 92, 93, 0.8), rgba(230, 230, 230, 0.8));
+
+}
+
+mat-expansion-panel{
+    color:black;
+
+    background: linear-gradient(to right, rgba(93, 92, 93, 0.8), rgba(230, 230, 230, 0.8));
+
+}

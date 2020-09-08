@@ -1,0 +1,8 @@
+li{
+    list-style-type: none;
+    color:darkblue;
+}
+
+.mob{
+    background: linear-gradient(to top, rgb(185, 185, 185), rgb(250, 250, 251))
+}

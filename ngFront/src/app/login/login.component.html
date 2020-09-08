@@ -1,0 +1,238 @@
+
+
+
+<div style=" background: linear-gradient(to top,red,black); height:100px; padding-top:20px;"><p style="font-size:37px; letter-spacing: 30px; color: ghostwhite; text-align:center; font-weight:100;">CEA</p></div>
+
+<!--<div class="center" style="padding-bottom:300px;">-->
+  <!--<div class="col-md-6 offset-md-3" style="height:300px;"><form class="example-form">-->
+  <!--<mat-card  style="font-size: 20px; color: white; box-shadow: 1px 1px 6px 1px #666;  background-color:rgb(0, 0, 0)" color="primary">{{ head }}</mat-card>-->
+  <!--<mat-tab-group style="background-color:rgba(236, 237, 247, 0.5); margin:auto; " #tabGroup (selectedTabChange)="tabChanged($event)">-->
+  <!--<mat-tab label="Login" style=" margin-bottom: 30px;">-->
+      <!--<mat-form-field class="example-full-width" appearance="outline" style="margin-top: 10px; margin-bottom: 10px;">-->
+        <!--<mat-label style="padding-left:10px;">Username</mat-label>-->
+        <!--<input matInput style="padding-left:10px;">-->
+      <!--</mat-form-field >-->
+      <!--<mat-form-field class="example-full-width" appearance="outline">-->
+        <!--<mat-label style="padding-left:10px;">Password</mat-label>-->
+        <!--<input matInput type="password" style="padding-left:10px;">-->
+        <!--<mat-hint  style="padding-left:10px;">Forgot password?</mat-hint>-->
+      <!--</mat-form-field>-->
+      <!--<button mat-raised-button color="primary" style="width:100%;">Login</button>-->
+  <!--</mat-tab>-->
+
+  <!--<mat-tab label="Sign up">-->
+    <!--<mat-form-field class="example-full-width" appearance="outline" style="margin-top: 10px; margin-bottom: 10px;">-->
+        <!--<mat-label style="padding-left:5px;">Username</mat-label>-->
+        <!--<input matInput style="padding-left:5px;">-->
+      <!--</mat-form-field >-->
+      <!--<mat-form-field class="example-full-width" appearance="outline">-->
+        <!--<mat-label style="padding-left:5px;">Email</mat-label>-->
+        <!--<input matInput style="padding-left:5px;">-->
+       <!---->
+      <!--</mat-form-field>-->
+      <!--<mat-form-field class="example-full-width" appearance="outline">-->
+        <!--<mat-label style="padding-left:5px;">Password</mat-label>-->
+        <!--<input matInput type="password" style="padding-left:5px;">-->
+      <!---->
+      <!--</mat-form-field>-->
+      <!--<mat-form-field class="example-full-width" appearance="outline">-->
+        <!--<mat-label style="padding-left:5px;">Confirm Password</mat-label>-->
+        <!--<input matInput type="password" style="padding-left:5px;">-->
+       <!---->
+      <!--</mat-form-field>-->
+  <!--<button mat-raised-button color="primary" style="width:100%;">Sign Up</button>-->
+  <!--</mat-tab>-->
+  <!---->
+<!--</mat-tab-group>-->
+
+  <!---->
+<!--</form>-->
+
+<!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<div class="container">-->
+  <!--<div class="row">-->
+    <!--<div class="col-sm">-->
+
+    <!--</div>-->
+    <!--<div class="col-sm-7">-->
+    <!--<div class="contain">-->
+      <!--<div class="card">-->
+            <!--<div class="card-header" style="padding-top:30px;">-->
+                <!--<h4>Contact Us</h4>-->
+                <!--<p style="font-weight: lighter; font-size: small">To ensure that we keep the contact and give you the accurate information on what is your better choice of the universities abroad and other services contact us </p>-->
+                <!--<hr style="width:50px; border-top: 1px solid #ccc;">-->
+            <!--</div>-->
+                <!--<div class="card-body" style="list-style-type: none; font-size: small; font-weight: lighter; text-align: center">-->
+                    <!--<li>Hotline: +255 745 626 241</li>-->
+                    <!--<li>Whatsapp: +8613062529727</li>-->
+                    <!--<hr style="width:200px; border-top: 1px solid #ccc;">-->
+                    <!--<li>ADDRESS: Dar es salaam city, Mbezi beach, Sykes Road Tanzania</li>-->
+                    <!--<li>Plot #931/1, First Floor Room #3 (<a href="">Get location)</a></li>-->
+                    <!--<span class="bac-text">FAS</span>-->
+                <!--</div>-->
+            <!--</div>-->
+    <!--</div>-->
+    <!--</div>-->
+    <!--<div class="col-sm">-->
+
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+
+
+
+
+
+
+
+
+
+
+<div class="container" style="height: 700px; padding-top: 100px; overflow:auto; ">
+  <div class="row" >
+    <div class="col-sm-5" style="padding-bottom:10px">
+            <div class="card">
+                
+                    <div class="card-header" style="padding-top:30px;">
+                        <h4 style="font-weight:100">{{ head }}</h4>
+        
+                        <hr style="width:50px; border-top: 1px solid #ccc;">
+                    </div>
+                        <!--<div class="card-body" style="list-style-type: none; font-size: small; font-weight: lighter; text-align: center">-->
+                           
+                                <mat-tab-group style="background-color:rgba(236, 237, 247, 0.1);" #tabGroup (selectedTabChange)="tabChanged($event)">
+                                        
+                                        <mat-tab label="Login" >
+                                            <form id="1" class="example-form" #form="ngForm" (ngSubmit)="submit(form)">
+                                                <mat-form-field class="example-full-width"  style="width:100%; padding-top:30px;">
+                                                    <mat-label style="padding-left:10px;" >Username</mat-label>
+                                                    <input matInput style="width:100%;" title="Username" [(ngModel)]="userData.username" name="username"> 
+                                                </mat-form-field >
+                                                <mat-form-field class="example-full-width" style="width:100%; padding-top:30px;" >
+                                                    <mat-label style="padding-left:10px;">Password</mat-label>
+                                                    <input matInput style="width:100%;" type="password" title="Password" name="password" [(ngModel)]="userData.password">
+                                                    <mat-hint  style="padding-left:10px;">Forgot password?</mat-hint>
+                                                </mat-form-field>
+                                                <button mat-raised-button color="primary" type="submit" style="width:100%;">Login</button>
+                                            </form>
+                                        </mat-tab>
+                                        
+                                        
+                                        <mat-tab class="yeuko" label="Sign up">
+                                                <form id="2" class="example-form" #form1="ngForm" (ngSubmit)="signupstu(form1)">
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;">
+                                                <mat-label style="padding-left:5px;">Username</mat-label>
+                                                <input matInput style="padding-left:5px;" [(ngModel)]="userData2.username" name="username1" title="Username">
+                                            </mat-form-field >
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;">
+                                                <mat-label style="padding-left:5px;">Email</mat-label>
+                                                <input matInput style="padding-left:5px;" [(ngModel)]="userData2.email" name="email" title="Email">
+                                            </mat-form-field>
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;" >
+                                                <mat-label style="padding-left:5px;">Password</mat-label>
+                                                <input matInput type="password" [(ngModel)]="userData2.password" name="password1" title="Password" >
+        
+                                            </mat-form-field>
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;" >
+                                                <mat-label style="padding-left:5px;">Confirm Password</mat-label>
+                                                <input matInput type="password" [(ngModel)]="userData2.password2" name="password2" title="Confirm password">
+        
+                                            </mat-form-field>
+                                            <button mat-raised-button color="primary" type="submit" style="width:100%;">Sign Up</button>
+                                        </form>
+                                        </mat-tab>
+                                    
+        
+                                </mat-tab-group>
+                           
+                            <!--<span class="bac-text">FAS</span>-->
+                        <!--</div>-->
+                    </div>
+
+    </div>
+    <div class="col-sm-2" style="height:100px; text-align: center">
+
+
+
+      OR
+
+
+
+
+
+    </div>
+    <div class="col-sm-5">
+            <div class="card">
+                    <div class="card-header" style="padding-top:30px;">
+                        <h4 style="font-weight:100">{{ header }}</h4>
+        
+                        <hr style="width:50px; border-top: 1px solid #ccc;">
+                    </div>
+                        <!--<div class="card-body" style="list-style-type: none; font-size: small; font-weight: lighter; text-align: center">-->
+                          
+                                <mat-tab-group style="background-color:rgba(236, 237, 247, 0.1);" #tabGroup (selectedTabChange)="tabChange($event)">
+                                        <mat-tab label="Login as a Partner" >
+                                                <form id="6" class="example-form" #form3="ngForm" (ngSubmit)="loginaspart(form3)" >
+                                                <input  style="width:100%;" [(ngModel)]="userData3.typed" title="value" name="typed" value="Partner" type="hidden">
+                                            <mat-form-field class="example-full-width"  style="width:100%; padding-top:30px;">
+                                                <mat-label style="padding-left:10px;">Username</mat-label>
+                                                <input matInput style="width:100%;" [(ngModel)]="userData3.username" title="Username" name="username">
+                                            </mat-form-field >
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:30px;" >
+                                                <mat-label style="padding-left:10px;">Password</mat-label>
+                                                <input matInput style="width:100%;" [(ngModel)]="userData3.password" name="password" type="password" title="Password">
+                                                <mat-hint  style="padding-left:10px;">Forgot password?</mat-hint>
+                                            </mat-form-field>
+                                            <button mat-raised-button color="primary" type="submit" style="width:100%;">Login</button>
+                                        </form>
+                                        </mat-tab>
+        
+                                        <mat-tab class="yeuko" label="Sign up">
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;">
+                                                <mat-label style="padding-left:5px;">Username</mat-label>
+                                                <input matInput style="padding-left:5px;" title="Username">
+                                            </mat-form-field >
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;">
+                                                <mat-label style="padding-left:5px;">Email</mat-label>
+                                                <input matInput style="padding-left:5px;" title="Email">
+                                            </mat-form-field>
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;" >
+                                                <mat-label style="padding-left:5px;">Password</mat-label>
+                                                <input matInput type="password" title="Password" >
+        
+                                            </mat-form-field>
+                                            <mat-form-field class="example-full-width" style="width:100%; padding-top:5px;" >
+                                                <mat-label style="padding-left:5px;">Confirm Password</mat-label>
+                                                <input matInput type="password" title="Confirm password">
+        
+                                            </mat-form-field>
+                                            <button mat-raised-button color="primary" style="width:100%;">Sign Up</button>
+                                        </mat-tab>
+        
+                                </mat-tab-group>
+            
+                            <!--<span class="bac-text">FAS</span>-->
+                        <!--</div>-->
+                    </div>
+
+    </div>
+  </div>
+</div>

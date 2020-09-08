@@ -1,0 +1,33 @@
+<div style=" padding-top:15px; border-top-left-radius:10px; border-top-right-radius:10px;">
+<h4 style="text-align: center; letter-spacing:8px; color:#666; font-weight:100;"> Application Details</h4>
+<table class="table table-sm table-bordered table-striped table-dark" style="box-shadow:0 5px 5px 0 #888;; border-top-left-radius:10px; border-top-right-radius:10px; overflow:hidden; ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Major</th>
+      <th scope="col">Years</th>
+      <th scope="col">Download</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr id="customers" *ngFor="let form of posts">
+      <td scope="row">1</td>
+      <td>{{form.course}}</td>
+      <td>{{form.years}}</td>
+      <td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>
+    </tr>
+    <!--<tr id="customers">-->
+      <!--<td scope="row">2</td>-->
+      <!--<td>BA</td>-->
+      <!--<td>3</td>-->
+      <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+    <!--</tr>-->
+    <!--<tr id="customers">-->
+      <!--<td scope="row">3</td>-->
+      <!--<td>Accountancy</td>-->
+      <!--<td>3</td>-->
+      <!--<td><i class="fas fa-arrow-down" style="cursor: alias;"></i></td>-->
+    <!--</tr>-->
+  </tbody>
+</table>
+</div>

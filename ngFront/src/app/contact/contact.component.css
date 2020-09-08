@@ -1,0 +1,53 @@
+.card {
+
+    background: linear-gradient(to top right, ghostwhite, ghostwhite, rgba(100, 93, 93, 0.1));
+    width: 350px;
+    height: 450px;
+    /*background-color: ghostwhite;*/
+    border-radius: 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0px 2px 5px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
+ /* -webkit-box-shadow: rgba(0, 0, 0, 0.180392) 0px 5px 11px 0px, rgba(0, 0, 0, 0.14902) 0px 4px 15px 0px; */
+}
+
+.card-header {
+  padding: 7px 12px;
+  font-size: 21px;
+  /*background-color: green;*/
+    background: -moz-linear-gradient(-45deg, #fa782e 8%, #c82930 83%, rgba(10, 10, 10, 0.4));
+    background: -webkit-linear-gradient(-45deg, #fa782e 8%, #c82930 83%, rgba(10, 10, 10, 0.4));
+    background: linear-gradient(135deg, #fa782e 8%, #c82930 83%, rgba(10, 10, 10, 0.4));
+    border-radius: 10px 10px 5px 5px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.156863) 0px 7px 7px 0px, rgba(0, 0, 0, 0.117647) 0px 2px 10px 0px;
+
+    filter: progid:DXImageTransform.Microsoft.gradient(StartColorStr='#fa782e', EndColorStr='#c82930', GradientType=1);
+  /*background: linear-gradient(to top right, rgba(32, 39,	28,	2	), rgba(134, 134,	134	,.7));*/
+
+  color: white;
+  position: relative;
+  text-align: center;
+  bottom: 35px;
+  height:200px;
+  width: 320px;
+  right: -15px;
+
+}
+
+.card-body {
+  padding: 7px 12px;
+  font-size: 21px;
+  color: grey;
+
+}
+
+    .contain {
+  margin: 45px 100px;
+}
+
+.bac-text{
+    display: inline-block;
+    font-size: 125px;
+    font-weight: 900;
+    margin-left: -7px;
+    margin-top: -12px;
+    color:rgba(243, 200, 36, 0.3);
+}

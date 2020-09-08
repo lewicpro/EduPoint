@@ -1,0 +1,36 @@
+
+<div class=" container-fluid" style="padding-top:30px; padding-bottom:60px;" >
+<div class="row">
+    <div class="col-sm-3" style="padding-bottom:50px;">
+    
+        
+            <div class="row">
+            <div class="col-sm-2" style="padding-bottom:2px;"></div>
+            <div class="col-sm-10" style="padding-bottom:30px; padding-top:50px; ">
+            <div class="row" style="border-top-left-radius:20px;">
+                <div  style="width:100%; padding-top:100px; border-color:rgba(57, 57, 57, 0);">
+                    <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" role="tab" href="#list-home"  [routerLink]="['majors']" style="font-weight:100" role="tab" aria-controls="majors">Majors</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" [routerLink]="['Requirements']" style="font-weight:100"  aria-controls="Requirements">Requirements</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" [routerLink]="['Application']" style="font-weight:100"  aria-controls="messages">Application Forms</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" [routerLink]="['Images']" style="font-weight:100"  aria-controls="settings">List of Universities</a>
+                    </div>
+                </div>
+                <div  style="width:100%; padding-top:100px; border-color:rgba(57, 57, 57, 0);">
+                    <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"></div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list"></div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list"></div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list"></div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+    
+    </div>
+    <div class=" a col-sm-9" style="overflow:auto;   padding-bottom: 100px; background-color:rgba(57, 57, 57, 0.2); border-color:rgba(57, 57, 57, 0); border-top-left-radius: 5px;  border-bottom-left-radius: 5px; height:500px"><router-outlet></router-outlet></div>
+  
+</div>
+
+</div>

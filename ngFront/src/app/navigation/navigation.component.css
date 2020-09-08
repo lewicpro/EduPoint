@@ -1,0 +1,17 @@
+.dropdown-menu{
+    background: linear-gradient to top right, rgba(255, 255, 255, 0.8), rgba(100, 100, 100, 0.8 );
+}
+
+
+.form-control{
+    padding: .175rem .75rem
+
+}
+
+.navbar{
+    padding: 5px 1px;
+}
+
+.nav-link {
+    padding: 3px 3px;
+}

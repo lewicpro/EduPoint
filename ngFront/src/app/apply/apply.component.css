@@ -1,0 +1,80 @@
+.box h3{
+    text-align:center;
+    position:relative;
+    top:80px;
+}
+.box {
+    width:70%;
+    height:200px;
+    background:#FFF;
+    margin:40px auto;
+}
+
+
+
+.effect3
+{
+  position: relative;
+}
+
+
+
+.effect3:before
+{
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 15px;
+  left: 10px;
+  width: 50%;
+  top: 80%;
+  max-width:300px;
+  background: #777;
+  box-shadow: 0 15px 10px #777;
+  transform: rotate(-3deg);
+}
+
+
+
+
+td{
+  font-weight:100;
+  font-size:12px;
+}
+th{
+  color:white;
+  font-weight:200;
+}
+
+th:hover{
+  color:darkblue;
+  font-weight:400;
+
+}
+
+
+#customers{
+  background-color: white;
+  
+
+}
+
+
+#customers:hover{
+  
+  background-color: rgba(255, 255, 255, 0.8);
+  /* box-shadow:5px 5px 5px 5px black; */
+}
+
+
+.mat-select-value{
+  padding-bottom: 221px;
+}
+
+.mat-select {
+  padding-top: 10px;
+
+}
+.mob{
+  background: linear-gradient(to top, rgb(223, 223, 223), rgb(240, 240, 240), rgb(255, 255, 255))
+}

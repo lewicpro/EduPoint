@@ -1,0 +1,79 @@
+
+<div style="padding:50px;"></div>
+<div class=" container"  style="padding-bottom: 100px; overflow: hidden; background-color:rgba(57, 57, 57, 0.2); border-color:rgba(57, 57, 57, 0); height:400px">
+
+
+        <div class="row">
+
+            <div class="col-2" style="height:450px;">
+                <mat-nav-list class="moj" style="padding-top: 15px;">
+
+                    <mat-list-item>
+                     <a matLine [routerLink]="['dashHome']">Dashboard</a>
+                     <button mat-icon-button [routerLink]="['dashHome']"  style="background-color: #888888;">
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                  <mat-list-item>
+                        <a matLine (click)="selected()" [routerLink]="['Apply']">Apply</a>
+                     <button mat-icon-button [routerLink]="['Apply']"  style="background-color: #888888;">
+
+                        <i title="Apply" class="fa fa-plus" aria-hidden="true"></i>
+                     </button>
+
+                  </mat-list-item>
+                    <!-- <mat-list-item>
+                     <a matLine [routerLink]="['Upload']">Upload</a>
+                     <button mat-icon-button [routerLink]="['Upload']" style="background-color: #888888;" >
+                        <i class="fa fa-upload" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item> -->
+                    <mat-list-item>
+                     <a matLine [routerLink]="['available']">Available</a>
+                     <button mat-icon-button [routerLink]="['available']"  style="background-color: #888888;">
+                        <i class="fa fa-university" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine [routerLink]="['Scholarship']">Scholarship</a>
+                     <button mat-icon-button [routerLink]="['Scholarship']" style="background-color: #888888;" >
+                        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine [routerLink]="['services']">Services</a>
+                     <button mat-icon-button [routerLink]="['services']" style="background-color: #888888;" >
+                        <i class="fa fa-spinner "></i>
+                     </button>
+                  </mat-list-item>
+
+
+                    <mat-list-item>
+                     <a matLine [routerLink]="['Email']">Email</a>
+                     <button mat-icon-button [routerLink]="['Email']" style="background-color: #888888;" >
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+                    <mat-list-item>
+                     <a matLine (click)="logout()">Logout</a>
+                     <button mat-icon-button (click)="logout()" style="background-color: #888888;">
+                        <i class="fa fa-bell" aria-hidden="true"></i>
+                     </button>
+                  </mat-list-item>
+
+                </mat-nav-list>
+
+
+            </div>
+
+            <div class="col-10" style="overflow: auto; height:400px">
+                <router-outlet></router-outlet>
+
+
+
+
+            </div>
+
+        </div>
+</div>
+<div style="padding:50px;"></div>

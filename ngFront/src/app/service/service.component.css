@@ -1,0 +1,11 @@
+.moj{
+    background: linear-gradient(to top, rgb(185, 185, 185), rgb(250, 250, 251))
+}
+
+
+
+.btne:hover{
+    background:rgb(144, 2, 2);
+    color:white;
+
+}

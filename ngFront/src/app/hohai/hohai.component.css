@@ -1,0 +1,23 @@
+p{
+    /* font-size:14px;  */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    /* letter-spacing:1px; */
+    text-align:center;
+    color:#666;
+}
+.mat-card{
+    background: rgba(246, 246, 255, 0.9)
+}
+
+.mat-raised-button{
+    position: unset;
+    transform: none;
+}
+li{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:100;
+    /* letter-spacing:1px; */
+    color:#666;
+}

@@ -1,0 +1,80 @@
+<div class="row" style="padding: 5px; border-radius: 3px; ">
+    <div class="col-sm"></div>
+    <div class="col-sm"></div>
+    <div class="roro  col-sm" style="padding: 8px; border-left: 6px solid blue;;  background-color: ghostwhite">
+        <form #imageForm = ngForm (ngSubmit)="onsubmit(caption, image)">
+        <span class="moa float-left" style="list-style-type: none">
+            <li><input style="width:70px;" type="hidden" #caption name="caption" value="image" id="caption"></li>
+            <li>username: {{datar}}</li>
+            <li>Email: {{email}}</li>
+            
+            <li>Date joined:{{date_joined | date}}</li>
+        </span>
+        <span class="float-right"><img width="60px;" #image height="60px" [src]="imageUrl" aria-hidden="true"><br><input (change)="handleFileInput($event.target.files)" accept="image/*" style="font-size: 10px; color: black; display: none;" #files type="file"> <a style="font-size: 10px; color: black; cursor:pointer" (click)="files.click()"> Upload image</a><button style="font-size: 10px; color: black;" type="submit" >submit</button></span>
+        </form>
+    </div>
+</div>
+<div class="row" style="padding: 5px; border-radius: 3px; height: 270px;">
+    <div class="roro col-sm" style="padding: 8px; background:transparent; border-radius: 3px; overflow: scroll">
+        <h5  style="text-align: center; color: grey; font-weight:200;">Events</h5>
+        <hr>
+        <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+
+                <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+
+            <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+        </div>
+
+        <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+
+
+                <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+
+            <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+        </div>
+
+
+    </div>
+    <div class="roro col-sm" style="padding: 8px; background:transparent; border-radius: 3px; overflow: scroll">
+            <h5  style="text-align: center; color: grey; font-weight:200;">Universities applied</h5>
+            <hr>
+            <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+    
+                    <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+    
+                <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+            </div>
+    
+            <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+    
+    
+                    <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+    
+                <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+            </div>
+    
+    
+        </div>
+    <div class="roro  col-sm" style="padding: 8px; background:transparent; border-radius: 3px; overflow: scroll">
+        <h5  style="text-align: center; color: grey; font-weight:200;">Feeds</h5>
+        <hr>
+        <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+
+
+                <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+
+            <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+        </div>
+
+        <div class="container-fluid" style=" font-weight: lighter; font-size: small; color: #555">
+
+
+                <li style="list-style-type: none; line-height: 0.5"><i class="fa fa-user" aria-hidden="true"></i> This sunday || 12:29pm</li><br>
+
+            <p style="font-size: 10px;">Tanzania, Kenya, Rwanda, Burundi, Uganda, Mozambique, Zambia, Zimbabwe, Ethiopia, Ghana, Nigeria, Somalia , Namibia, Cameroon, ivory coast , South Africa</p>
+        </div>
+
+
+    </div>
+</div>
+

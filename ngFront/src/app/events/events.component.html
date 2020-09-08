@@ -1,0 +1,58 @@
+<div style=" padding-top:15px; border-top-left-radius:10px; border-top-right-radius:10px;">
+<h4 style="text-align: center; letter-spacing:8px; color:#666; font-weight:100;"> Events </h4>
+
+<table class="table table-sm table-bordered table-dark" style="box-shadow:0 5px 5px 0 #888; border-top-left-radius:10px; border-top-right-radius:10px; overflow:hidden; ">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Dates</th>
+        <th scope="col">Event</th>
+      <th scope="col">Location</th>
+
+    </tr>
+  </thead>
+  <tbody >
+    <tr id="customers" *ngFor="let Events of posts" >
+      <td scope="row">1</td>
+      <td>{{Events.Date}}</td>
+        <td>{{Events.event}}</td>
+      <td><i class="fas fa-map-marker-alt" style="color:red" title="Get location"></i></td>
+
+    </tr>
+    <!--<tr id="customers">-->
+      <!--<td scope="row">2</td>-->
+      <!--<td>08/10/2018</td>-->
+        <!--<td>Photo (Pasport sized photo)</td>-->
+      <!--<td><i class="fas fa-map-marker-alt" style="color:red"></i></td>-->
+
+    <!--</tr>-->
+    <!--<tr id="customers">-->
+      <!--<td scope="row">3</td>-->
+      <!--<td>08/08/2018</td>-->
+        <!--<td>Highschool and O'level certificate</td>-->
+      <!--<td><i class="fas fa-map-marker-alt" style="color:red"></i></td>-->
+    <!--</tr>-->
+    <!--<tr id="customers">-->
+      <!--<td scope="row">4</td>-->
+      <!--<td>01/09/2018</td>-->
+        <!--<td>Bachelor transcript and certificate</td>-->
+      <!--<td><i class="fas fa-map-marker-alt" style="color:red"></i></td>-->
+    <!--</tr>-->
+
+    <!--<tr id="customers">-->
+      <!--<td scope="row">5</td>-->
+      <!--<td>04/05/2018</td>-->
+        <!--<td>Medical Examination form</td>-->
+      <!--<td><i class="fas fa-map-marker-alt" style="color:red"></i></td>-->
+    <!--</tr>-->
+
+    <!--<tr id="customers">-->
+      <!--<td scope="row">6</td>-->
+      <!--<td>03/04/2018</td>-->
+        <!--<td>Clinical Record report</td>-->
+      <!--<td><i class="fas fa-map-marker-alt" aria-hidden="true" style="color:red"></i></td>-->
+    <!--</tr>-->
+  </tbody>
+</table>
+<p style="text-align: center"><i class="fas fa-map-marker-alt"></i> : Location</p>
+</div>
